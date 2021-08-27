@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro','Josefin Sans', sans-serif;
+}
+
+body{
+    /* background: url("https://c4.wallpaperflare.com/wallpaper/726/754/357/kali-linux-kali-linux-nethunter-linux-unix-lenovo-hd-wallpaper-preview.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: contain; */
+
+
+    /* background: linear-gradient(to bottom left,rgba(235 ,3,255,0.43) , rgba(0, 81, 119, 0.609),rgba(45,0,43,0.82)); */
+    
+    background: linear-gradient(4deg,rgb(62,62,62) , rgb(33,33,33),rgb(49,49,49));
+    border: 2px solid black;
+
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2[class=sub-Head]{
+    margin: 20px 0px 10px 0px;
+    text-decoration: underline;
+    color: rgb(200, 200, 200);
+}
+
+.sub-Head:hover{
+    color:rgba(148, 148, 148, 0.849);
+}
+
+.main-content{
+    color: black;
+    font-weight: 550;
+}
+
+.li:first-child{
+    color:rgb(81, 255, 0);
+}
+
+.li:last-child{
+    color: darkgoldenrod;
+}
+
+.li:nth-child(2){
+    color: darkred;
+}
+
+.ulC:only-child{
+    background-color: rgb(191, 255, 191);
+}
+
+#link1:link{
+    background-color: rgb(199, 199, 199);
+    color: rgb(43, 189, 226);
+}
+
+#link2:visited{
+    background-color: rgb(200, 200, 200);
+    color: rgb(70, 226, 43);
+}
+
+img[src*="img/"]{
+    border: 6px solid rgba(0, 25, 41, 0.863);
+    width: 300px;
+    height: 150px;
+}
+
+.test-container{
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    /* background: linear-gradient(to right,rgb(14, 87, 223) , rgba(30, 142, 194, 0.418)); */
+}
