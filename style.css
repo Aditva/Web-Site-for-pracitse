@@ -15,31 +15,91 @@ body{
     /* background: linear-gradient(to bottom left,rgba(235 ,3,255,0.43) , rgba(0, 81, 119, 0.609),rgba(45,0,43,0.82)); */
     
     background: linear-gradient(4deg,rgb(62,62,62) , rgb(33,33,33),rgb(49,49,49));
+
+    /* background: rgb(146,141,241);
+    background: linear-gradient(to bottom, rgba(146,141,241,1) 0%, rgba(119,119,240,1) 31%, rgb(14, 118, 139) 100%); */
     border: 2px solid black;
 
 }
 
 .header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 20px;
     margin-bottom: 20px;
-    height: 40px;
+    height: 70px;
     color: whitesmoke;
     font-weight: bold;
     text-align: center;
 }
 
+.list{
+    float: left;
+    list-style:none;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#search{
+    position: relative;
+    right: -320px;
+    bottom: -20px;
+    width: 157px;
+    height: 25px;
+}
+
+
+.login{
+    display: inline-block;
+    position: relative;
+    left: 467px;
+    bottom: 15px;
+    font-size: 31px;
+}
+
+.log-in:hover{
+    color: lightslategray;
+}
+.anc:hover{
+    color: lightslategray;
+}
+
+.list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* .h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color: #3050f1;
+    -webkit-text-stroke-color: #151515;
+    -webkit-text-stroke-width: 1px;
+} */
+
+.head-img{
+    width: 650px;
+    height: 50px;
+    position: relative;
+    left: 380px;
+}
+
 h2[class=sub-Head]{
     margin: 20px 0px 10px 0px;
     text-decoration: underline;
-    color: rgb(200, 200, 200);
+    color: rgb(228, 228, 228);
 }
 
 .sub-Head:hover{
-    color:rgba(148, 148, 148, 0.849);
+    color:rgba(198, 255, 92, 0.849);
 }
 
 .main-content{
-    color: black;
+    color: rgb(251, 251, 251);
     font-weight: 550;
 }
 
@@ -69,7 +129,7 @@ h2[class=sub-Head]{
     color: rgb(70, 226, 43);
 }
 
-img[src*="img/"]{
+.image{
     border: 6px solid rgba(0, 25, 41, 0.863);
     width: 300px;
     height: 150px;
@@ -81,3 +141,4 @@ img[src*="img/"]{
     padding: 10px;
     /* background: linear-gradient(to right,rgb(14, 87, 223) , rgba(30, 142, 194, 0.418)); */
 }
+
