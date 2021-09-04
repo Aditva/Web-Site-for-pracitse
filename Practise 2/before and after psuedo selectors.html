@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After psuedo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 7, 7);
+            color: rgb(0, 0, 0);
+        }
+
+        .head::before{
+            content: "";
+            background:url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }        
+
+        .unordered-list {
+            display: flex;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .item {
+            list-style: none;
+            padding: 24px;
+            font-family: 'Hina Mincho', serif;
+        }
+
+        .list-links{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .list-links:hover{
+            color: #67ff67cf;
+            font-weight: bold;
+        }
+
+        .section {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 90px 168px;
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: rgba(255, 255, 255, 0.212);
+            border-radius: 7px;
+        }
+
+        .heading {
+            font-size: 40px;
+            margin-bottom: 45px;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .para::before {
+            content: "this is some of the content of the website which is before the main content! ";
+        }
+
+        .para::after {
+            content: "this is some of the content of the website which is after the main content! ";
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <nav class="nav-bar">
+            <ul class="unordered-list">
+                <li class="item"><a href="#" class="list-links">Home</a></li>
+                <li class="item"><a href="#" class="list-links">About</a></li>
+                <li class="item"><a href="#" class="list-links">Services</a></li>
+                <li class="item"><a href="#" class="list-links">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h1 class="heading">Welcome to this tutorial</h3>
+                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ut, aliquam, vel, rem
+                    eum perspiciatis beatae consectetur ipsum assumenda aspernatur labore optio dolorum non eius sunt
+                    aut atque unde. Architecto, perspiciatis placeat!</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
